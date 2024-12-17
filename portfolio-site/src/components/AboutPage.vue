@@ -63,7 +63,7 @@ import SkillItem from './SkillItem.vue'
 
 #about-page {
   display: grid;
-  grid-template-columns: 1.25fr 0.05fr 1fr; /* Three columns: left, divider, right */
+  grid-template-columns: 1.25fr 0.1fr 1fr; /* Three columns: left, divider, right */
   grid-template-rows: 1fr; /* Single row spanning full height */
 }
 
@@ -97,7 +97,8 @@ import SkillItem from './SkillItem.vue'
   grid-column: 2; /* Middle column for vertical line */
   border-left: 2px solid white;
   height: 60%; /* Match grid container height */
-  align-self: center; /* Center vertically within its column */
+  justify-self: center; /* Center horizontally within the column */
+  align-self: center; /* Center vertically within the column */
 }
 
 .title {

@@ -10,6 +10,6 @@ import ContactPage from '../components/ContactPage.vue'
     <IntroPage />
     <AboutPage />
     <ProjectPage />
-    <!-- <ContactPage /> -->
+    <ContactPage />
   </main>
 </template>
