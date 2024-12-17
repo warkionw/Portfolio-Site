@@ -6,10 +6,10 @@ import ContactPage from '../components/ContactPage.vue'
 </script>
 
 <template>
-  <main>
+  <main class="full-page-container">
     <IntroPage />
-    <!-- <AboutPage />
+    <AboutPage />
     <ProjectPage />
-    <ContactPage /> -->
+    <!-- <ContactPage /> -->
   </main>
 </template>

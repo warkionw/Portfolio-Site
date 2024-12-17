@@ -2,11 +2,11 @@
 </script>
 
 <template>
-  <div id="intro">
-    <ProfilePicture />
+  <div id="intro" class="page">
     <p id="before" class="text">Hello! I'm</p>
+    <!-- <img src="../assets/profile-pic.png" alt="Profile Picture" /> -->
     <p id="name" class="text">Tai Ngee Tian</p>
-    <img :src="require('@/assets/your-image.svg')" alt="Profile Picture" />
+    <p id="after" class="text">Aspiring Software Engineer</p>
   </div>
 </template>
 
@@ -21,7 +21,12 @@
   color: white;
 }
 
-#before {
+#after {
+  font-style: italic;
+}
+
+p {
+  padding-bottom: 15px;
   font-size: x-large;
   color: gray;
 }
