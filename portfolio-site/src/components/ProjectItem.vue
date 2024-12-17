@@ -1,86 +1,70 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+  <div class="card">
+    <div class="grid">
+      <div class="image-container">
+        <slot name="img"></slot>
+      </div>
+      <div class="body">
+        <slot name="title"></slot>
+        <slot name="desc"></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.item {
-  margin-top: 2rem;
+.card {
   display: flex;
-  position: relative;
+  flex-direction: column; /* Stack image and body vertically */
+  width: 500px;
+  height: 250px;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Prevent content from overflowing the card */
 }
 
-.details {
-  flex: 1;
-  margin-left: 1rem;
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 pink;
 }
 
-i {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.image-container {
   display: flex;
-  place-items: center;
-  place-content: center;
-  width: 32px;
-  height: 32px;
-  color: var(--color-text);
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Inner background color */
+  width: 100%; /* Fill the available width */
+  height: 100%; /* Fill the available height */
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
+.image-container img {
+  width: 100%;  /* Make image width 100% of its container */
+  height: 150px; /* Make image height 100% of its container */
+  object-fit: cover; /* Ensure the image covers the container, preserving aspect ratio */
 }
 
-@media (min-width: 1024px) {
-  .item {
-    margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-  }
+.body {
+  padding: 15px;
+}
 
-  i {
-    top: calc(50% - 25px);
-    left: -26px;
-    position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-  }
+body h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
 
-  .item:before {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:after {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:first-of-type:before {
-    display: none;
-  }
-
-  .item:last-of-type:after {
-    display: none;
-  }
+body p {
+  font-size: 1rem;
+  color: white;
 }
 </style>

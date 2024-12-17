@@ -21,36 +21,41 @@ import SkillItem from './SkillItem.vue'
           </SkillItem>
           <SkillItem>
             <template #icon>
-              <img src="../assets/python.svg" alt="Java" class="skill">
+              <img src="../assets/spring.svg" alt="Spring Boot" class="skill">
             </template>
           </SkillItem>
         </div>
         <div class="skills-col">
           <SkillItem>
             <template #icon>
-              <img src="../assets/java.svg" alt="Java" class="skill">
+              <img src="../assets/css.svg" alt="CSS" class="skill">
             </template>
           </SkillItem>
           <SkillItem>
             <template #icon>
-              <img src="../assets/java.svg" alt="Java" class="skill">
+              <img src="../assets/html.svg" alt="HTML" class="skill">
             </template>
           </SkillItem>
           <SkillItem>
             <template #icon>
-              <img src="../assets/java.svg" alt="Java" class="skill">
+              <img src="../assets/vue.svg" alt="Vue" class="skill">
+            </template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon>
+              <img src="../assets/git.svg" alt="Git" class="skill">
             </template>
           </SkillItem>
         </div>
         <div class="skills-col">
           <SkillItem>
             <template #icon>
-              <img src="../assets/java.svg" alt="Java" class="skill">
+              <img src="../assets/python.svg" alt="Python" class="skill">
             </template>
           </SkillItem>
           <SkillItem>
             <template #icon>
-              <img src="../assets/java.svg" alt="Java" class="skill">
+              <img src="../assets/mysql.svg" alt="MySQL" class="skill">
             </template>
           </SkillItem>
         </div>
@@ -99,12 +104,6 @@ import SkillItem from './SkillItem.vue'
   height: 60%; /* Match grid container height */
   justify-self: center; /* Center horizontally within the column */
   align-self: center; /* Center vertically within the column */
-}
-
-.title {
-  font-size: 3rem; /* Adjust font size as needed */
-  color: white;
-  text-align: center;    /* Center-align the title text */
 }
 
 #skills-grid {

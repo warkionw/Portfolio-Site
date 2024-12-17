@@ -13,7 +13,7 @@
   align-items: center;
   border: 2px solid white; /* Border color */
   border-radius: 20px; /* Rounded border */
-  height: 90px; /* Outer box height */
+  height: 100px; /* Outer box height */
   width: 180px;
   margin-bottom: 15px; /* Space between items */
   background-color: transparent; /* Transparent gap between border and inner container */

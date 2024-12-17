@@ -15,11 +15,6 @@ a,
   padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
 
 @media (min-width: 1024px) {
   body {
@@ -52,4 +47,10 @@ a,
 
 .skill {
   width: 150px;
+}
+
+.title {
+  font-size: 3rem; /* Adjust font size as needed */
+  color: white;
+  text-align: center;    /* Center-align the title text */
 }
