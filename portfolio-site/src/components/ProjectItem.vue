@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .card {
   display: flex;
   flex-direction: column; /* Stack image and body vertically */

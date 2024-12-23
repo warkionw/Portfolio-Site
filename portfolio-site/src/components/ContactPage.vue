@@ -12,15 +12,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.sub {
-  font-size: 1.5rem; /* Adjust font size as needed */
-  color: lightgray;
-  margin: 30px 0px 20px 0px;
-}
-
-.social {
-  margin: 10px;
-}
-</style>

@@ -12,12 +12,10 @@ import ProjectItem from './ProjectItem.vue'
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #project {
-  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   vertical-align: top;
-
 }
 
 .sub {

@@ -9,7 +9,7 @@ import ContactPage from '../components/ContactPage.vue'
   <main class="full-page-container">
     <IntroPage />
     <AboutPage />
-    <!-- <ProjectPage /> -->
+    <ProjectPage />
     <ContactPage />
   </main>
 </template>

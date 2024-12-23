@@ -1,0 +1,153 @@
+// Import base.scss file
+@use 'base';  // Adjust the path as necessary
+
+// Styling for the app container
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+// Media query for larger screens
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+// Page layout
+.page {
+  height: 100vh;  // Full viewport height
+  display: flex;  // Enable Flexbox
+  flex-direction: column;  // Stack children vertically
+  justify-content: center;  // Center horizontally
+  align-items: center;  // Center vertically
+  text-align: center;  // Center text alignment
+}
+
+.vl {
+  grid-column: 2; /* Middle column for vertical line */
+  border-left: 2px solid base.$c2;
+  height: 60%; /* Match grid container height */
+  justify-self: center; /* Center horizontally within the column */
+  align-self: center; /* Center vertically within the column */
+}
+
+// Intro Page
+
+#intro {
+  padding-bottom: 15px;
+  font-size: x-large;
+}
+
+#name {
+  font-size: 500%;
+  color: base.$c-white
+}
+
+#after {
+  font-style: italic;
+}
+
+// About page
+
+#about-page {
+  display: grid;
+  grid-template-columns: 1.25fr 0.1fr 1fr; /* Three columns: left, divider, right */
+  grid-template-rows: 1fr; /* Single row spanning full height */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  height: 60%;
+}
+
+#about-section {
+  grid-column: 1; /* First column */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align title to the top */
+  align-items: center;         /* Center content horizontally */
+}
+
+#skills-section {
+  grid-column: 3; /* Third column */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align title to the top */
+  align-items: center;         /* Center content horizontally */
+}
+
+#skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr; /* Single row spanning full height */
+  gap: 10px;
+  justify-items: center;   /* Center the items horizontally within each grid cell */
+  align-items: center;     /* Center the items vertically within the grid cells */
+  width: 100%;             /* Make sure the grid takes the full width of the parent */
+  height: 100%;
+}
+
+.bio {
+  font-size: 1.2rem;
+  text-align: justify;   /* Justify the bio text */
+}
+
+.pfp {
+  border-radius: 50%;
+  height: 15rem;
+  margin: 25px;
+  border: 4px solid base.$c2;
+}
+
+.title {
+  font-size: 3rem; /* Adjust font size as needed */
+  text-align: center;  /* Center-align the title text */
+  color: base.$c-white;
+}
+
+.skill {
+  width: 150px;
+}
+
+// Skill Item
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid base.$c2; /* Border color */
+  border-radius: 20px; /* Rounded border */
+  height: 100px; /* Outer box height */
+  width: 180px;
+  margin-bottom: 15px; /* Space between items */
+  background-color: base.$c-white; /* Transparent gap between border and inner container */
+  padding: 5px; /* Creates a consistent inner margin */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Slightly smaller radius to fit within the item */
+  width: 100%; /* Fill the available width */
+  height: 100%; /* Fill the available height */
+}
+
+// Contact Page
+.sub {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  color: base.$color-text;
+  margin: 30px 0px 20px 0px;
+}
+
+.social {
+  margin: 10px;
+}
