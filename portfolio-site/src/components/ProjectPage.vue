@@ -7,17 +7,19 @@ import ProjectItem from './ProjectItem.vue'
     <p class="title">Projects</p>
     <p class="sub title">Click the project to redirect to Github (If available)</p>
     <div id="proj-item">
-      <ProjectItem>
-        <template #image>
-          <img src="../assets/checkm8.png" alt="Project 1" />
-        </template>
-        <template #title>
-          <h4>Project 1</h4>
-        </template>
-        <template #desc>
-          <p>Project 1 Description</p>
-        </template>
-      </ProjectItem>
+      <a href="https://github.com/ZhiLinR/SMU-CS203">
+        <ProjectItem>
+          <template #image>
+            <img src="../assets/checkm8.png" alt="Project 1" />
+          </template>
+          <template #title>
+            <h4>Project 1</h4>
+          </template>
+          <template #desc>
+            <p>Project 1 Description</p>
+          </template>
+        </ProjectItem>
+      </a>
 
       <ProjectItem>
         <template #image>

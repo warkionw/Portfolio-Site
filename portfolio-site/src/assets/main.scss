@@ -16,9 +16,27 @@
   }
 }
 
+a {
+  color: inherit; // Default link color
+  text-decoration: none;
+
+  &:visited {
+    color: inherit !important; // Ensure visited links have the same color as unvisited links
+  }
+
+  &:hover {
+    color: inherit; // Hover state
+  }
+
+  &:active {
+    color: inherit; // Active state
+  }
+}
+
+
 // Page layout
 .page {
-  height: 100vh;  // Full viewport height
+  min-height: 100vh;  // Full viewport height
   display: flex;  // Enable Flexbox
   flex-direction: column;  // Stack children vertically
   justify-content: center;  // Center horizontally
@@ -138,7 +156,7 @@
   align-items: center;
   border-radius: 15px; /* Slightly smaller radius to fit within the item */
   width: 100%; /* Fill the available width */
-  height: 100%; /* Fill the available height */
+
 }
 
 // Contact Page

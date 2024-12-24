@@ -21,7 +21,7 @@
   border: 3px solid white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 20px; /* Rounded corners */
   overflow: hidden; /* Prevent content from overflowing the card */
   margin-bottom: 30px;
 }
@@ -45,7 +45,8 @@
   align-items: center;
   background-color: white; /* Inner background color */
   width: 100%; /* Fill the available width */
-  height: 100%; /* Fill the available height */
+  border-radius: 0px;
+  padding-bottom: 5px;
 }
 
 .image-container img {
