@@ -1,0 +1,9 @@
+@use './variables.scss' as *;
+
+.vl {
+  grid-column: 2;
+  border-left: 2px solid $c2;
+  height: 60%;
+  justify-self: center;
+  align-self: center;
+}

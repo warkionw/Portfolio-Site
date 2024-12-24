@@ -1,0 +1,15 @@
+@use '../variables.scss' as *;
+
+#intro {
+  padding-bottom: 15px;
+  font-size: x-large;
+}
+
+#name {
+  font-size: 500%;
+  color: $c-white;
+}
+
+#after {
+  font-style: italic;
+}

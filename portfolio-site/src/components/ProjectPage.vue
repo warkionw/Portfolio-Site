@@ -50,18 +50,7 @@ import ProjectItem from './ProjectItem.vue'
 </template>
 
 <style lang="scss" scoped>
-#project {
-  text-align: center;
-  vertical-align: top;
-}
-
-.sub {
-  font-size: 1rem; /* Adjust font size as needed */
-  color: lightgray;
-}
-
 img {
   width: 50vw;  /* Make image width 100% of its container */
 }
-
 </style>
