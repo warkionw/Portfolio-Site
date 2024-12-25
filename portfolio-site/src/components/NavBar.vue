@@ -1,29 +1,10 @@
 <template>
-  <NavBar>
-    <template #default="{isShowMenu}">
-      <fwb-navbar-collapse :is-show-menu="isShowMenu">
-        <fwb-navbar-link is-active link="#">
-          Home
-        </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Services
-        </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Pricing
-        </fwb-navbar-link>
-        <fwb-navbar-link link="#">
-          Contact
-        </fwb-navbar-link>
-      </fwb-navbar-collapse>
-    </template>
-  </NavBar>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#intro" class="nav-link">Home</a>
+      <a href="#about-page" class="nav-link">About</a>
+      <a href="#project" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
 </template>
-
-<script setup>
-import {
-  FwbNavbar,
-  FwbNavbarCollapse,
-  FwbNavbarLink,
-  FwbNavbarLogo,
-} from 'flowbite-vue'
-</script>

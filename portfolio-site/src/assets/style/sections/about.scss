@@ -3,7 +3,12 @@
 #about-page {
   display: grid;
   grid-template-columns: 1.25fr 0.1fr 1fr;
-  grid-template-rows: 1fr;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr; // Single-column layout for smaller screens
+    grid-template-rows: auto auto auto; // Adjust rows for each section
+    border: 3px red;
+  }
 }
 
 .grid-item {
