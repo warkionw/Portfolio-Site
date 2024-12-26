@@ -1,0 +1,15 @@
+@use './style/variables.scss' as *;
+
+// Use global styles and resets
+@use './style/reset.scss';
+@use './style/topography.scss';
+@use './style/layout.scss';
+
+// Use components
+@use './style/components.scss';
+
+// Use section-specific styles
+@use './style/sections/intro.scss';
+@use './style/sections/about.scss';
+@use './style/sections/contact.scss';
+@use './style/sections/project.scss';
