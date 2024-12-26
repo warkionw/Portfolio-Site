@@ -7,7 +7,10 @@ import SkillItem from './SkillItem.vue'
     <div id="about-section" class="grid-item">
       <p class="title">About</p>
       <img src="../assets/profile-pic.png" alt="Profile Picture" class="pfp"/>
-      <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="bio">I'm a penultimate Software Engineering Student in SMU. I am interested in seeing how technology works and how it can be applied in real world applications.</p>
+      <br />
+      <p class="bio">To expand my knowledge and interests, I am taking a 2nd major in Cybersecurity, as well as taking courses to understand AI.</p>
+
     </div>
     <div class="vl"></div>
     <div id="skills-section" class="grid-item">
