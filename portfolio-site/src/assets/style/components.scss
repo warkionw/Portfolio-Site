@@ -2,7 +2,7 @@
 
 .vl {
   grid-column: 2;
-  border-left: 2px solid $c2;
+  border-left: 2px solid $c-black;
   height: 60%;
   justify-self: center;
   align-self: center;
@@ -20,7 +20,7 @@
 }
 
 .navbar-toggle {
-  background-color: $c-white;
+  background-color: $c-black;
   border-radius: 15px;
   padding: 16px;
   border: none;
@@ -45,7 +45,7 @@
   top: 100%;
   right: 0;
   width: 10%;
-  background-color: white;
+  background-color: $c-white;
   z-index: 1100;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin-right: 1rem;
@@ -85,6 +85,6 @@
   transition: color 0.3s;
 
   &:hover {
-    color: $c1; // Replace with your hover color variable
+    color: darkgray; // Replace with your hover color variable
   }
 }

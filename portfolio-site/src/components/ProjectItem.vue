@@ -4,7 +4,7 @@
       <div class="proj-image-container">
         <slot name="image"></slot>
       </div>
-      <div class="body">
+      <div class="card-body">
         <slot name="title"></slot>
         <slot name="desc"></slot>
       </div>

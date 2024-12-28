@@ -28,7 +28,7 @@ import ProjectItem from './ProjectItem.vue'
       <a href="https://github.com/warkionw/APD.github.io">
         <ProjectItem>
           <template #image>
-            <img src="../assets/checkm8.png" alt="Middleware" />
+            <img src="../assets/multi-threaded.png" alt="Middleware" />
           </template>
           <template #title>
             <h4>Multi-Threaded Middleware Microservice</h4>
@@ -44,7 +44,7 @@ import ProjectItem from './ProjectItem.vue'
       <a href="https://github.com/warkionw/WAD2">
         <ProjectItem>
           <template #image>
-            <img src="../assets/checkm8.png" alt="Schedoo" />
+            <img src="../assets/schedoo.png" alt="Schedoo" />
           </template>
           <template #title>
             <h4>Schedoo</h4>
@@ -62,7 +62,7 @@ import ProjectItem from './ProjectItem.vue'
       <a href="https://github.com/warkionw/Portfolio-Site">
         <ProjectItem>
           <template #image>
-            <img src="../assets/checkm8.png" alt="Portfolio" />
+            <img src="../assets/canva-tnt.png" alt="Portfolio" />
           </template>
           <template #title>
             <h4>Portfolio Site</h4>
@@ -80,9 +80,3 @@ import ProjectItem from './ProjectItem.vue'
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-img {
-  width: 50vw;  /* Make image width 100% of its container */
-}
-</style>
