@@ -6,12 +6,20 @@
 }
 
 #name {
-  font-size: 500%;
+  font-size: 125px;
   color: $c-black;
+  font-weight: 300;
 }
 
 #after {
   font-style: italic;
+}
+
+.tnt {
+  color: #652c1d;
+  font-size: 125px;
+  font-weight: 700;
+  padding: 15px;
 }
 
 .gradient-background {
@@ -19,10 +27,10 @@
     repeating-linear-gradient(
       90deg,           /* Vertical stripes */
       #e24422,
-      #5d1e0e 10%, 
+      #5d1e0e 12.5%, 
     ),
     repeating-linear-gradient(
-      10deg, 
+      2deg, 
       #e24422, #e24422 33.33%,
       $c-white 33.33%, $c-white 66.66%,
       #e24422 66.66%
