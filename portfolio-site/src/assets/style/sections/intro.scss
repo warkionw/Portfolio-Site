@@ -13,3 +13,19 @@
 #after {
   font-style: italic;
 }
+
+.gradient-background {
+  background: 
+    repeating-linear-gradient(
+      90deg,           /* Vertical stripes */
+      #e24422,
+      #5d1e0e 10%, 
+    ),
+    repeating-linear-gradient(
+      10deg, 
+      #e24422, #e24422 33.33%,
+      $c-white 33.33%, $c-white 66.66%,
+      #e24422 66.66%
+    );
+  background-blend-mode: overlay;
+}
