@@ -5,7 +5,9 @@
         <slot name="image"></slot>
       </div>
       <div class="card-body">
-        <slot name="title"></slot>
+        <div class="project-title">
+          <slot name="title"></slot>
+        </div>
         <slot name="desc"></slot>
       </div>
     </div>

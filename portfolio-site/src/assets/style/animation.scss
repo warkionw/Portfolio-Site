@@ -1,0 +1,19 @@
+.full-page-container {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .scroll-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .snap-section {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  
+  .project-section {
+    height: auto; /* Allow the project section to be taller than 100vh */
+  }
