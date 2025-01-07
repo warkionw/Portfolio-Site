@@ -6,8 +6,17 @@
   height: 60%;
   justify-self: center;
   align-self: center;
-}
 
+  @media screen and (max-width: 1280px) {
+    grid-row: 2; // Ensure vl is the second row
+    grid-column: 1;
+    border-bottom: 2px solid $c-black;
+    border-left: none;
+    width: 80%; // Adjust width for horizontal line
+    height: 2px; // Adjust height for horizontal line
+    margin: 20px 0; // Add margin for spacing
+  }
+}
 .navbar {
   position: fixed;
   top: 0;

@@ -21,11 +21,11 @@ export default {
         typeSpeed: 75, // Typing speed
         backSpeed: 50, // Backspace speed
         startDelay: 0, // No delay after backspacing
-        backDelay: 350, // Pause before starting the new string
+        backDelay: 300, // Pause before starting the new string
         loop: false, // No loop
         showCursor: false, // Enable cursor during typing
       });
-    }, 1000); // Wait 1 second before starting
+    }, 500); // Wait 1 second before starting
   },
 };
 </script>

@@ -16,8 +16,12 @@
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 30px;
-  background-color: $c-black;
+  background-color: $tnt-mirage;
   color: $c-white;
+
+  @media screen and (max-width: 1200px) {
+    width: 80vw;
+  }
 }
 
 .card-body {
@@ -48,4 +52,8 @@
   font-size: 20px;
   padding-bottom: 10px;
   text-decoration: underline;
+
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+  }
 }
