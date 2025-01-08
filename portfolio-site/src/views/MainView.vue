@@ -20,8 +20,6 @@ import ContactPage from '../components/ContactPage.vue'
       </section>
       <section class="snap-section project-section">
         <ProjectPage />
-      </section>
-      <section class="snap-section">
         <ContactPage />
       </section>
     </div>
