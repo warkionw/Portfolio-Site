@@ -1,7 +1,12 @@
 .full-page-container {
     height: 100vh;
     overflow-y: auto;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
+
+    @media screen and (max-width: 1280px) {
+      scroll-snap-type: y proximity;
+      
+    }
   }
   
   .scroll-container {
