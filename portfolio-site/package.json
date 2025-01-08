@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "flowbite-vue": "^0.1.6",
+    "typed.js": "^2.1.0",
     "vue": "^3.5.13",
     "vue-navigation-bar": "^6.1.0",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vue3-carousel": "^0.12.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

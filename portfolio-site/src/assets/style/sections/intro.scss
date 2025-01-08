@@ -6,10 +6,51 @@
 }
 
 #name {
-  font-size: 500%;
-  color: $c-white;
+  font-size: 125px;
+  color: $c-black;
+  font-weight: 300;
+
+  @media screen and (max-width: 900px) {
+    font-size: 75px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 50px;
+  }
 }
 
 #after {
   font-style: italic;
+}
+
+.tnt {
+  color: $tnt-font-red;
+  font-size: 125px;
+  font-weight: 700;
+  padding: 15px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 100px;
+  }
+
+  @media screen and (max-width: 650px) {
+    font-size: 75px;
+    padding: 7px
+  }
+}
+
+.gradient-background {
+  background: 
+    repeating-linear-gradient(
+      90deg,           /* Vertical stripes */
+      $tnt-light-red,
+      $tnt-dark-red 12.5%, 
+    ),
+    repeating-linear-gradient(
+      2deg, 
+      $tnt-light-red, $tnt-light-red 33.33%,
+      $c-white 33.33%, $c-white 66.66%,
+      $tnt-light-red 66.66%
+    );
+  background-blend-mode: overlay;
 }

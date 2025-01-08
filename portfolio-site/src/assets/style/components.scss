@@ -2,12 +2,21 @@
 
 .vl {
   grid-column: 2;
-  border-left: 2px solid $c2;
+  border-left: 2px solid $c-black;
   height: 60%;
   justify-self: center;
   align-self: center;
-}
 
+  @media screen and (max-width: 1280px) {
+    grid-row: 2; // Ensure vl is the second row
+    grid-column: 1;
+    border-bottom: 2px solid $c-black;
+    border-left: none;
+    width: 80%; // Adjust width for horizontal line
+    height: 2px; // Adjust height for horizontal line
+    margin: 20px 0; // Add margin for spacing
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -16,11 +25,11 @@
   z-index: 1000;
   display: flex;
   justify-content: flex-end; /* Aligns the toggle button to the right */
-  padding: 1rem 1rem 0rem 1rem; /* Adjust padding if necessary */
+  padding: 1rem 2rem 0rem 1rem; /* Adjust padding if necessary */
 }
 
 .navbar-toggle {
-  background-color: $c-white;
+  background-color: $c-black;
   border-radius: 15px;
   padding: 16px;
   border: none;
@@ -31,6 +40,7 @@
 
 .navbar-toggle.opened {
   border-bottom-right-radius: 0px;
+  z-index: 1100;
 }
 
 .navbar-toggle img {
@@ -44,11 +54,11 @@
   text-align: end;
   top: 100%;
   right: 0;
-  width: 10%;
-  background-color: white;
+  width: 150px;
+  background-color: $c-white;
   z-index: 1100;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin-right: 1rem;
+  margin-right: 2rem;
   border-radius: 10px 0 10px 10px;
 }
 
@@ -59,7 +69,6 @@
   text-decoration: none;
   display: block;
   border-radius: 10px;
-
 }
 
 .dropdown-content a:hover {
@@ -85,6 +94,6 @@
   transition: color 0.3s;
 
   &:hover {
-    color: $c1; // Replace with your hover color variable
+    color: darkgray; // Replace with your hover color variable
   }
 }
