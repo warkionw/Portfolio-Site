@@ -62,7 +62,7 @@ import ProjectItem from './ProjectItem.vue'
       <a href="https://github.com/warkionw/Portfolio-Site">
         <ProjectItem>
           <template #image>
-            <img src="../assets/canva-tnt.png" alt="Portfolio" />
+            <img src="../assets/portfolio-site.png" alt="Portfolio" />
           </template>
           <template #title>
             <h4>Portfolio Site</h4>
