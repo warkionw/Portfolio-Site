@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1.25fr 0.1fr 1fr;
   padding: 0 100px;
+  height: auto; // Allow the content to grow naturally
 
   @media screen and (max-width: 1280px) {
     grid-template-columns: 1fr; // Single-column layout for smaller screens
@@ -19,7 +20,8 @@
   align-items: center;
   text-align: center;
   padding: 1rem;
-  height: 60%;
+  min-height: 60%;
+  height: auto; // Allow the content to grow naturally
 
   @media screen and (max-width: 1280px) {
     height: auto; // Ensure about-section is the first row
