@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://warkionw.github.io/Portfolio-Site/",
+  "homepage": "https://warkionw.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
