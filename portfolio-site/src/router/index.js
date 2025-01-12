@@ -12,9 +12,4 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach((to, from, next) => {
-  document.title = to.name || 'Default Title'; // Set the document title to the route name or a default title
-  next();
-})
-
-export default router
+export default router 
