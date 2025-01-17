@@ -36,7 +36,7 @@ import ProjectItem from './ProjectItem.vue'
           <template #desc>
             <p>A multi-threaded Java application that is used to verify the validity of JWTs passed in and returns the claims if valid.</p>
             <br />
-            <p>Skills: Java, MySQL</p>
+            <p>Skills: Java</p>
           </template>
         </ProjectItem>
       </a>
